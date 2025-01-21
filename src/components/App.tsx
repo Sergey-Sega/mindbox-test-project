@@ -31,9 +31,7 @@ const App: React.FC = () => {
           <TodoFilter />
         </div>
       </Content>
-      <Footer style={{ textAlign: 'center' }}>
-        ToDo App ©2025 Created with Ant Design
-      </Footer>
+      <Footer style={{ textAlign: 'center' }}>ToDo App for MindBox</Footer>
     </Layout>
   )
 }
