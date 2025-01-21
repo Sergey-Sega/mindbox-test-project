@@ -31,13 +31,14 @@ module.exports = [
       '@typescript-eslint': require('@typescript-eslint/eslint-plugin'),
     },
     rules: {
-      'prettier/prettier': 'error',
-      '@typescript-eslint/no-unused-vars': 'warn',
-      'react/react-in-jsx-scope': 'off',
-      'react/prop-types': 'off',
-      'react-hooks/rules-of-hooks': 'error',
-      'react-hooks/exhaustive-deps': 'warn',
-      semi: ['error', 'never'],
+      'prettier/prettier': [
+        'error',
+        {
+          endOfLine: 'lf',
+        },
+      ],
+      'linebreak-style': ['error', 'unix'], // Устанавливает стиль переносов строк
+      'semi': ['error', 'never'], // Отключить точки с запятой
     },
     settings: {
       react: {
@@ -45,4 +46,4 @@ module.exports = [
       },
     },
   },
-]
+];

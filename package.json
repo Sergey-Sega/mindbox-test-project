@@ -1,7 +1,9 @@
 {
   "dependencies": {
+    "antd": "^5.23.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "zustand": "^5.0.3"
   },
   "scripts": {
     "start": "webpack serve",
@@ -9,7 +11,7 @@
     "lint": "eslint \"src/**/*.{ts,tsx}\" --fix",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "format": "prettier --write \"src/**/*.{ts,tsx}\""
+    "format": "prettier --write \"src/**/*.{ts,tsx,css}\""
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
@@ -30,6 +32,7 @@
     "eslint-plugin-prettier": "^5.2.3",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.1.0",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.6.3",
     "style-loader": "^4.0.0",
     "ts-loader": "^9.5.2",
